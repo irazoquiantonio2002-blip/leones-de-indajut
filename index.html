@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leones del Injudet | Escuela de Karate Shito-Ryu en Tabasco — Inscripción Gratuita</title>
+  <meta name="description" content="Escuela oficial de Karate Shito-Ryu del Instituto de la Juventud y el Deporte de Tabasco (INJUDET). Clases de Kata, Kumite y Kobudo para niños, jóvenes y adultos. Inscripción 100% gratuita.">
+  <meta name="keywords" content="karate tabasco, injudet, clases de karate gratis, karate para niños, karate shito-ryu, kumite, kobudo, leones del injudet, escuela de karate, karate infantil">
+  <meta property="og:title" content="Leones del Injudet | Escuela de Karate Shito-Ryu en Tabasco">
+  <meta property="og:description" content="Programa oficial de INJUDET. Karate Shito-Ryu para niños, jóvenes y adultos. Inscripción 100% gratuita.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/equipo-nacional-guadalajara-3.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imagenes/logo.png">
+  <link rel="apple-touch-icon" href="imagenes/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb brand-logo-surface">
+      <img class="brand-logo-img" src="imagenes/logo.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Leones del Injudet — inicio">
+          <div class="nav-logo-icon brand-logo-surface" aria-hidden="true">
+            <img class="brand-logo-img" src="imagenes/logo.png" alt="">
+          </div>
+          <div class="nav-logo-copy">
+            <span>Leones</span>
+            <span>Karate</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#ambientes">Disciplinas</a></li>
+            <li><a href="#proceso">Inscripción</a></li>
+            <li><a href="#producto">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Inscríbete Gratis
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nosotros</a>
+      <a href="#ambientes">Disciplinas</a>
+      <a href="#proceso">Inscripción</a>
+      <a href="#producto">Equipo</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Inscríbete Gratis →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Programa Oficial INJUDET · Karate Shito-Ryu
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Todo niño</span></span>
+            <span class="line"><span>lleva un</span></span>
+            <span class="line"><span class="accent">león dentro.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            El Karate Shito-Ryu forma disciplina, respeto y confianza en cada cinturón. Únete al equipo oficial de INJUDET en Tabasco — <strong>la inscripción es 100% gratuita.</strong>
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Inscríbete Gratis
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-hand-fist" style="font-size:15px; color:var(--gray);"></i>
+              Conoce las Disciplinas
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Programa Oficial INJUDET
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-medal"></i>
+              Nivel Competitivo Nacional
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Tabasco, México
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La filosofía Leones</div>
+            <h2 class="why-quote" id="why-heading">
+              El karate no se trata de vencer al rival…
+              <em> se trata de vencer tus propios límites.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            En Leones del Injudet formamos atletas con disciplina, respeto y espíritu de superación, dentro de un programa oficial, incluyente y completamente gratuito.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-hand-fist"></i>
+            </div>
+            <h3>Karate Shito-Ryu Tradicional</h3>
+            <p>Aprende el estilo japonés que combina potencia, precisión técnica y profundidad filosófica en cada clase.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3>Para Toda la Familia</h3>
+            <p>Clases para niños desde los primeros años, jóvenes y adultos. Nunca es tarde para ponerte el gi.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <h3>Equipo Competitivo</h3>
+            <p>Formación con miras a la competencia: nuestros alumnos representan a Tabasco en campeonatos nacionales.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Programa Oficial y Gratuito</h3>
+            <p>Respaldados por el Instituto de la Juventud y el Deporte de Tabasco (INJUDET). Inscripción sin costo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Tipos de luz
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestras Disciplinas</div>
+            <h2 class="section-title" id="amb-heading">
+              No todo el karate<br>
+              <span class="gold">se entrena igual</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Tres caminos, una sola disciplina: el Karate-Do tradicional.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál es tu camino?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Kata -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="imagenes/clase-tecnica-kihon.jpg"
+              alt="Alumnos practicando kata y técnica fundamental de Karate Shito-Ryu en el dojo Leones del Injudet">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(214,40,40,0.15); border-color:rgba(214,40,40,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-yin-yang" style="color:#ff8a75;"></i>
+              </div>
+              <h3>Kata & Kihon</h3>
+              <p>Perfecciona las técnicas fundamentales y las formas tradicionales del Karate Shito-Ryu.</p>
+              <div class="amb-temp">Tradición — Precisión y Control</div>
+            </div>
+          </div>
+
+          <!-- Kumite -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="imagenes/kumite-combate-1.jpg"
+              alt="Combate de kumite entre alumnos de cinturón negro con protecciones en el equipo Leones del Injudet">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-hand-fist" style="color:white;"></i>
+              </div>
+              <h3>Kumite</h3>
+              <p>Combate deportivo controlado: reflejos, estrategia y disciplina en cada intercambio.</p>
+              <div class="amb-temp">Competencia — Reflejos y Estrategia</div>
+            </div>
+          </div>
+
+          <!-- Kobudo -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="imagenes/kobudo-baston-bo.jpg"
+              alt="Entrenamiento de kobudo con bastón bo, arte tradicional de armas de Okinawa">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(214,40,40,0.15); border-color:rgba(255,90,69,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-torii-gate" style="color:#ff8a75;"></i>
+              </div>
+              <h3>Kobudo</h3>
+              <p>El arte tradicional del manejo de armas como el bo: un puente vivo con la herencia japonesa.</p>
+              <div class="amb-temp">Herencia — Bo y Armas Tradicionales</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Tu camino al dojo</div>
+          <h2 class="section-title" id="proceso-heading">
+            Únete en 3 simples <span class="gold">pasos</span>
+          </h2>
+          <p>Del primer mensaje a tu primera clase, te acompañamos en cada paso para que comiences con el pie derecho.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Contáctanos por WhatsApp</h3>
+            <p>Escríbenos y resolvemos todas tus dudas sobre horarios, edades y el proceso de inscripción.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Asiste a tu Clase de Prueba</h3>
+            <p>Conoce el dojo, a tus futuros compañeros y vive tu primera experiencia con el Karate Shito-Ryu — sin costo ni compromiso.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Únete al Equipo Leones</h3>
+            <p>Completa tu inscripción, 100% gratuita, y comienza tu camino hacia el cinturón negro.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO ESTRELLA
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Equipo de Alto Rendimiento</div>
+            <h2 class="section-title" id="prod-heading">
+              Formamos campeones<br>
+              <span class="gold">dentro y fuera del tatami</span>
+            </h2>
+            <p class="producto-lead">
+              Nuestro equipo competitivo representa a Tabasco en campeonatos nacionales, forjado bajo la disciplina técnica del Karate Shito-Ryu y los valores del Karate-Do.
+            </p>
+
+            <ul class="feature-rows" aria-label="Valores que formamos">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-hand-fist"></i></div>
+                <div>
+                  <h4>Disciplina Marcial</h4>
+                  <p>Cada clase fortalece la mente y el cuerpo con la exigencia técnica del Karate Shito-Ryu tradicional.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></div>
+                <div>
+                  <h4>Respeto y Valores</h4>
+                  <p>Formamos no solo atletas, sino personas íntegras dentro y fuera del dojo.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-medal"></i></div>
+                <div>
+                  <h4>Espíritu de Competencia</h4>
+                  <p>Nuestros alumnos representan a Tabasco en campeonatos nacionales bajo normativa WKF.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-people-group"></i></div>
+                <div>
+                  <h4>Comunidad Leones</h4>
+                  <p>Un equipo unido por la pasión del karate, para niños, jóvenes y adultos.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Respaldo institucional">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Shito-Ryu</span>
+                <span class="spec-name">Estilo Oficial</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">WKF</span>
+                <span class="spec-name">Normativa Internacional</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">CONADE</span>
+                <span class="spec-name">Respaldo Institucional</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">INJUDET</span>
+                <span class="spec-name">Programa Estatal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Alumnos de Leones del Injudet en combate de kumite durante entrenamiento"></div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Equipo Leones — Nivel Nacional
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-medal" style="color:var(--gold);"></i>
+                Campeonato Nacional 2026
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Estadísticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100 por ciento">0</div>
+            <div class="stat-lbl">Inscripción<br>gratuita</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="3"
+                 aria-label="3 disciplinas">0</div>
+            <div class="stat-lbl">Disciplinas: Kata,<br>Kumite y Kobudo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="4" data-suffix="+"
+                 aria-label="4 años en adelante">0</div>
+            <div class="stat-lbl">Edad mínima<br>para comenzar</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2026"
+                 aria-label="edición 2026">0</div>
+            <div class="stat-lbl">Presencia en el<br>Campeonato Nacional</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Todas las edades</div>
+          <h2 class="section-title" id="sec-heading">
+            Un dojo para <span class="gold">cada etapa de tu vida</span>
+          </h2>
+          <p>Sin importar tu edad o experiencia previa, hay un lugar para ti en nuestro equipo.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem"
+               style="background-image:linear-gradient(rgba(10,8,8,0.68),rgba(10,8,8,0.88)),url('imagenes/circuito-motriz-infantil.jpg');">
+            <i class="fa-solid fa-child sector-icon" aria-hidden="true"></i>
+            <h3>Infantil</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem"
+               style="background-image:linear-gradient(rgba(10,8,8,0.68),rgba(10,8,8,0.88)),url('imagenes/kumite-combate-2.jpg');">
+            <i class="fa-solid fa-user-ninja sector-icon" aria-hidden="true"></i>
+            <h3>Juvenil</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem"
+               style="background-image:linear-gradient(rgba(10,8,8,0.68),rgba(10,8,8,0.88)),url('imagenes/equipo-nacional-guadalajara-1.jpg');">
+            <i class="fa-solid fa-user sector-icon" aria-hidden="true"></i>
+            <h3>Adultos</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem"
+               style="background-image:linear-gradient(rgba(10,8,8,0.68),rgba(10,8,8,0.88)),url('imagenes/equipo-nacional-guadalajara-2.jpg');">
+            <i class="fa-solid fa-trophy sector-icon" aria-hidden="true"></i>
+            <h3>Equipo de Competencia</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem"
+               style="background-image:linear-gradient(rgba(10,8,8,0.68),rgba(10,8,8,0.88)),url('imagenes/clase-infantil-juegos.jpg');">
+            <i class="fa-solid fa-people-group sector-icon" aria-hidden="true"></i>
+            <h3>Clases Familiares</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Únete al <span class="gold">Equipo Leones</span>
+          </h2>
+          <p>Cupo limitado. Escríbenos hoy y agenda tu clase de prueba gratuita.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Inscripción 100% Gratuita</h3>
+            <p class="ci-sub">Un programa oficial de INJUDET para niños, jóvenes y adultos en Tabasco.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Gimnasio de Box (Planta Alta)<br>
+                     Tabasco, México.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+5219936237967">+52 1 993 623 7967</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y resolvemos tus dudas al instante.</p>
+                  <a href="https://wa.me/5219936237967?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20equipo%20de%20Karate%20Leones%20del%20Injudet." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicita tu Lugar</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">Clase de interés</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Clases Infantiles</option>
+                    <option>Clases Juveniles</option>
+                    <option>Clases de Adultos</option>
+                    <option>Equipo de Competencia</option>
+                    <option>Información General</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos de ti</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Edad del interesado, experiencia previa o cualquier duda que tengas…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Inscribirme por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para confirmar tu inscripción.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="footer-logo-icon brand-logo-surface" aria-hidden="true">
+            <img class="brand-logo-img" src="imagenes/logo.png" alt="">
+          </span>
+          <span>Leones del Injudet.</span>
+        </div>
+
+        <div class="footer-partner" style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-dim);">Programa Oficial de</span>
+          <span style="background:#fff;padding:5px 10px;border-radius:8px;display:inline-flex;align-items:center;line-height:0;">
+            <img src="imagenes/injudet-logo.jpg" alt="INJUDET — Instituto de la Juventud y el Deporte de Tabasco" style="height:20px;width:auto;display:block;">
+          </span>
+        </div>
+
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Leones del Injudet — Karate Shito-Ryu. Programa de INJUDET, Tabasco.
+        </p>
+        <div class="footer-socials">
+          <a href="https://wa.me/5219936237967" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/5219936237967?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20equipo%20de%20Karate%20Leones%20del%20Injudet."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
