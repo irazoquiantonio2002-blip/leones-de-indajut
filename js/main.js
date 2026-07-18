@@ -94,7 +94,7 @@
   const marqueeInner = document.querySelector('.marquee-inner');
   if (marqueeInner) {
     const items = [
-      'Karate Shito-Ryu', 'Kata', 'Kumite', 'Kobudo',
+      'Karate Shito-Ryu', 'Kata', 'Kumite',
       'Inscripción Gratuita', 'Disciplina', 'Respeto',
       'Programa Oficial INJUDET', 'Tabasco, México', 'Equipo Nacional 2026',
       'Niños · Jóvenes · Adultos', 'Cupo Limitado'
